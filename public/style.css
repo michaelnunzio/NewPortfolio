@@ -1,0 +1,420 @@
+body{
+  font-family: arial;
+  background-color: rgb(252, 252, 252);
+min-height: 100px;
+
+
+}
+
+.apc{
+  font-size: 18px;
+  margin-right: 12px;
+ /* font-weight:lighter; */
+}
+
+header{
+  font-weight: large;
+}
+
+.nav-wrapper{
+    background-color: black;
+    /* line-height: 88px; */
+    height: 92px;
+line-height: 92px;
+background-color: black;
+} 
+
+/* nav {
+height: 92px;
+line-height: 92px;
+background-color: black;
+
+} merged w wrapper */ 
+
+#logo{
+    height:92px;
+    width:92px;
+    margin-left: 40px;
+}
+
+/* animation for fade in */
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  header {  
+    /* This section calls the slideInFromTop animation we defined above */
+    animation: .9s ease-out 0s 1 slideInFromTop;
+
+    /*make the header invisible until it loads from js*/
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+  }
+
+  header.load{
+    opacity: 1;
+  }
+  /*make the header invisible until it loads from js*/
+
+  #test p.load {
+    opacity: 1;
+}
+
+  /*animate end */
+
+  
+/* add text to image (IMAGE WILL CHANGE)*/
+.cardUno {
+  margin-top: -20px;
+  padding-top: 100px;
+  margin-bottom: 35px;
+  background-image: url("pictures/skyex.jpg");
+  height: 571px;
+  box-shadow: 0px 0px 15px 0px black;
+  /* position: relative; */
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: arial;
+  font-weight: bold;
+  text-shadow: black 4px 4px;
+  /*imagefade in*/
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+.cardUno.load{
+  opacity: 1;
+}
+
+#gitImg{
+
+ height: 32px;
+ width: 32px;
+ margin-top: 22px;
+ /* margin-left: -40px; */
+
+}
+
+#emailImg{
+  font-size: 32px;
+  margin-top: 12px;
+  margin-left: 7px;
+}
+
+#resImg{
+  font-size: 32px;
+  margin-top: 10px;
+  margin-left: 11px;
+}
+
+#menuImg{
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+
+#nav-mobile2{
+  margin-left: 35px;
+}
+
+
+
+
+/* .centered { */
+  /* position: absolute; */
+  /* top: 30%;
+  left: 50%; */
+  /* z-index: 1; */
+  /* transform: translate(-50%, -50%); */
+/* } */
+
+.centered2 {
+  /* position: absolute;
+  top: 40%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  font-size: 30px;
+}
+/* add text to image (IMAGE WILL CHANGE)*/
+
+#test p {
+
+  /*color change*/
+  animation-name: example;
+  animation: example 3s;
+  color:white;
+  /*color change*/
+
+    opacity: 0;
+    margin-top: 25px;
+    /* font-size: 21px; */
+    text-align: center;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+#test p.load {
+    opacity: 1;
+}
+
+
+/*color change keyframes*/
+@keyframes example {
+0% {color: white;}
+70% {color: rgba(255, 217, 0, 0.699);}
+/* 50% {color: slategray;} */
+100% {color: white;}
+}
+
+/*color change keyframes*/
+
+@media screen and (max-width: 740px) {
+#logo{
+  height: 70px;
+width:70px;
+margin-right:470px;
+
+}
+
+.cardUno{
+  font-size:40px;
+  height: 460px;
+}
+
+.nav-wrapper{
+  height: 70px;
+line-height: 70px;
+}
+
+
+#menuImg{
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+}
+
+   /* For iphones */
+@media screen 
+and (min-width : 375px) and (max-width : 812px){
+  .cardUno{
+    font-size:32px;
+    height: 400px;
+  }
+
+}
+
+
+.cardRow{
+  padding-top: 30px;
+  height:50%;
+  width: 50%;
+  text-align: center;
+}
+
+h2 {
+  font: 18px sans-serif;
+  margin-top: 24px;
+  color: gray;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2.background {
+  position: relative;
+  z-index: 1;
+} 
+  
+  h2.background:before {
+      border-top: 1px solid lightgray;
+      content:"";
+      margin: 0 auto; /* this centers the line to the full width specified */
+      position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      top: 50%; left: 0; right: 0; bottom: 0;
+      width: 60%;
+      z-index: -1;
+  }
+
+  span { 
+      /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+      background: rgb(252, 252, 252);
+      padding: 0 15px; 
+}
+
+/* for about one*/
+h2.background2 {
+  position: relative;
+  z-index: 1;
+} 
+  
+  h2.background2:before {
+      border-top: 1px solid lightgray;
+      content:"";
+      margin: 0 auto; /* this centers the line to the full width specified */
+      position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+      top: 50%; left: 0; right: 0; bottom: 0;
+      width: 68%;
+      z-index: -1;
+  }
+/* for about one*/
+
+/* color fade*/
+.cardsImg {
+border: 1px lightgray solid;
+/* box-shadow: 0 0 3px 0 black; */
+filter: grayscale(.8);
+
+}
+
+.cardsImg::before{
+  background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.cardsImg:hover{
+  animation: bloom ease-in-out .75s forwards;
+}
+.cardsImg:hover::before {
+    animation: circle .75s;
+}
+
+
+@keyframes bloom {
+	0% {
+		filter: grayscale(.8);
+	}
+	40% {
+		filter: grayscale(.5);
+	}
+	100% {
+		filter: grayscale(0);
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: .5;
+                background: rgba(213,156,34,.2);
+	}
+	40% {
+		opacity: 1;
+                background: rgba(213,34,160,.2);
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+/* color fade*/
+
+
+.contcont{
+  font-size: 15px;
+  /* font-weight: bold; */
+  font-family: verdana;
+
+} 
+
+.botext{
+  color: gray;
+}
+
+
+.footer-wrapper{
+background-color: rgb(218, 216, 216);
+box-shadow: 0px 0px 6px 0px gray;
+/*keep at bottom*/
+position: absolute;
+bottom: 100;
+width: 100%;
+height: 80px;
+line-height: 80px;
+}
+
+.brkRow{
+  padding-top: -100px;
+
+}
+
+footer{
+  margin-top: 100px; 
+  }
+
+.apcFoot{
+  color: rgb(85, 85, 85);
+  }
+    
+.nameCC{
+  color: rgb(85, 85, 85);
+  font-size: 16px;
+}
+
+/*about me CSS*/
+.aboutPic{
+  height: 400px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.aboutPic2{
+  height:  400px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.aboutTxt{
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+.aboutMe{
+  margin-top: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.intro{
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+}
+
+.intro2{
+  line-height: 1.8;
+  font-size: 20px;
+  font-family: "helvetica neue"
+}
+
+#aboutR1{
+  margin-left: -10px;
+  
+}
+
+.skillz{
+  line-height: 1.9;
+  font-family: "helvetica neue";
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PortofilioMM</title>
+         <!--Jquery link-->
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+    <!--Materialize-->
+    {{!-- <base href= "/"> --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+
+<!--You know it's fixed when this is gone-->
+</head>
+<body>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <header>
+       
+            <nav class="nav-wrapper">
+           
+
+                <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+                    <i class="material-icons large" id="menuImg">menu</i>
+                  </a>
+
+              <div class="col s1 offset-s1 logoS">
+                <a href="/" class="brand-logo"><img class="responsive-img" id="logo" src="pictures/logoPic.jpg"></a>
+              </div>
+
+
+
+              <div class="col s7 offset-s1">
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="apc" href="/about">about</a></li>
+                    <li><a class="apc" href="/portfolio">portfolio</a></li>
+                    <li><a class="apc" href="#">contact</a></li>
+
+                    <li><ul id="nav-mobile2" class="right hide-on-small-and-down">
+                      <li><a href="https://github.com/michaelnunzio?tab=repositories/"><img class="right hide-on-small-and-down" class="responsive-img" id="gitImg" src="/pictures/gitlogo.png"></a></li>
+                      <li><i id="emailImg" class="large material-icons icon-white" class="right hide-on-small-and-down" class="responsive-img">email</i></li>
+                      <li><i id="resImg" class="large material-icons icon-white" class="right hide-on-small-and-down" class="responsive-img">attach_file</i></li>
+                      </ul></li>
+                  </ul>
+          
+            </div>
+
+            <!-- <div class="col s2">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://github.com/michaelnunzio?tab=repositories/"><img class="right hide-on-med-and-down" class="responsive-img" id="gitImg" src="pictures/gitlogo.png"></a></li>
+                <li><i id="eImg" class="large material-icons icon-white" class="right hide-on-med-and-down" class="responsive-img">email</i></li>
+                </ul>
+            </div> -->
+           
+          </nav>
+       
+
+            <!--side nav-->
+          <ul class="sidenav" id="mobile-nav">
+              <li><a class="apc" href="/about">about</a></li>
+              <li><a class="apc" href="/portfolio">portfolio</a></li>
+              <li><a class="apc" href="#">contact</a></li>
+              <li><a class="apc" href="https://github.com/michaelnunzio?tab=repositories/">github</a></li>
+              <li><a class="apc" href="#">email</a></li>
+              <li><a class="apc" href="#">resume</a></li>
+              <li></li>
+
+          </ul>
+
+        </header>
+      </div>
+   
+{{{body}}}
+
+ <footer>  
+    <!-- <div class="container-fluid fixed-bottom" id= "footer"> -->
+          <div class="row bottom">
+       
+     
+          <nav class="footer-wrapper">
+         
+            <div class="col s5 offset-s1">
+                <a class="nameCC">© 2019 Michael Minardi</a>
+            </div>
+
+            <div class="col s5">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a class="apcFoot" href="#">about</a></li>
+                  <li><a class="apcFoot" href="#">portfolio</a></li>
+                  <li><a class="apcFoot" href="#">contact</a></li>
+                </ul>
+          </div>
+          </nav>
+      
+      </div>
+        <!-- </div> -->
+      </footer>
+    </div>
+     
+
+<script src="main.js"></script> <!--code in JS file-->
+
+  </body>
+</html>
+ 

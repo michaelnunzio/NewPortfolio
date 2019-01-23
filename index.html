@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PortofilioMM</title>
+         <!--Jquery link-->
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+    <!--Materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+
+
+<!--You know it's fixed when this is gone-->
+</head>
+<body>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <header>
+       
+            <nav class="nav-wrapper">
+           
+
+                <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+                    <i class="material-icons large" id="menuImg">menu</i>
+                  </a>
+
+              <div class="col s1 offset-s1 logoS">
+                <a href="index.html" class="brand-logo"><img class="responsive-img" id="logo" src="public/pictures/logoPic.jpg"></a>
+              </div>
+
+
+
+              <div class="col s7 offset-s1">
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="apc" href="#">about</a></li>
+                    <li><a class="apc" href="#">portfolio</a></li>
+                    <li><a class="apc" href="#">contact</a></li>
+
+                    <li><ul id="nav-mobile2" class="right hide-on-small-and-down">
+                      <li><a href="https://github.com/michaelnunzio?tab=repositories/"><img class="right hide-on-small-and-down" class="responsive-img" id="gitImg" src="public/pictures/gitlogo.png"></a></li>
+                      <li><i id="emailImg" class="large material-icons icon-white" class="right hide-on-small-and-down" class="responsive-img">email</i></li>
+                      <li><i id="resImg" class="large material-icons icon-white" class="right hide-on-small-and-down" class="responsive-img">attach_file</i></li>
+                      </ul></li>
+                  </ul>
+          
+            </div>
+
+            <!-- <div class="col s2">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://github.com/michaelnunzio?tab=repositories/"><img class="right hide-on-med-and-down" class="responsive-img" id="gitImg" src="pictures/gitlogo.png"></a></li>
+                <li><i id="eImg" class="large material-icons icon-white" class="right hide-on-med-and-down" class="responsive-img">email</i></li>
+                </ul>
+            </div> -->
+           
+          </nav>
+       
+
+            <!--side nav-->
+          <ul class="sidenav" id="mobile-nav">
+              <li><a class="apc" href="#">about</a></li>
+              <li><a class="apc" href="#">portfolio</a></li>
+              <li><a class="apc" href="#">contact</a></li>
+              <li><a class="apc" href="#">github</a></li>
+              <li><a class="apc" href="#">email</a></li>
+              <li><a class="apc" href="#">resume</a></li>
+              <li></li>
+
+          </ul>
+
+        </header>
+      </div>
+    <!-- </div> -->
+
+
+
+<!-- <div class="container-fluid testCont"> 
+  <div class="row-fluid">
+      <div class="col s12 work">
+          <p>vdfjknmvfjnf fdbk</p>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container-fluid cardUno">  -->
+    <div class="row-fluid cardUno">
+        <div class="col s12">
+           
+                <!-- <img class="card-img-top"> -->
+              <!-- <div class="col s6 offset-s6"> -->
+                <div class="centered" id="test"><p>Michael Nunzio Minardi</p></div>
+                <div class="centered2" id="test"><p>Full Stack Developer</p></div>
+                <!-- <div class="c3" id="test"><p>Passion for writing clean, efficient code.</p></div> -->
+              </div>
+
+              
+        </div>
+      <!-- </div> -->
+                
+
+
+<!-- <div class="container-fluid brkRow"> -->
+  <div class="row brkRow">
+      <div class="col s12"><h2 class="background"><span>Some of my Projects</span></h2></div>
+    </div>
+
+    <div class="row">
+        <div class="col s3 offset-s3">
+          <div class="card cardsImg">
+            <div class="card-image">
+                <a href="https://battlebots.herokuapp.com/"><img class="cardsImg" src="public/pictures/bb.jpg"></a>
+
+            </div>
+            <div class="card-content contcont">
+              <p>BattleBots</p>
+              <p class="botext">School Project</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s3">
+            <div class="card cardsImg">
+              <div class="card-image">
+                <a href="https://michaelnunzio.github.io/projectUno/"><img class="cardsImg" src="public/pictures/buzzer.jpg"></a>
+              
+              </div>
+              <div class="card-content contcont">
+                <p>The Buzzer</p>
+                <p class="botext">School Project</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+  <!-- </div> -->
+
+
+    <!--Move all of this to the about me handlebars page-->
+  <!-- <div class="container-fluid">
+
+    <div class="row">
+  <div class="col s6 offset-s2 aboutMe">
+    <h1>about me</h1>
+   <p class="intro">I'm a Full Stack Developer from New Jersey.</p>
+    <p class="intro2">I'm currently pursuing a position in Web Development while enrolled at 
+      Rutgers University Coding Bootcamp. I have training in all phases of the development 
+      lifecycle and am interested in a challenging development position where both innovation and creativity are valued.</p>
+  </div>
+  </div>
+
+</div> -->
+
+
+<!-- 
+
+ <footer id="footer">
+ 
+   <div class="row-fluid">
+     <div class="col s3 offset-s1"><a class="nameCC"></a>© 2019 Michael Minardi</a></div>
+
+     <div class="col s4 offset-s2">
+     <ul id="nav" class="right hide-on-med-and-down">
+        <li><a class="apc" href="#">about</a></li>
+        <li><a class="apc" href="#">portfolio</a></li>
+        <li><a class="apc" href="#">contact</a></li>
+      </ul>
+    </div>
+   
+
+
+
+     </div>
+   </div>
+ 
+ </footer> -->
+
+ <footer>  
+    <!-- <div class="container-fluid fixed-bottom" id= "footer"> -->
+          <div class="row bottom">
+       
+     
+          <nav class="footer-wrapper">
+         
+            <div class="col s5 offset-s1">
+                <a class="nameCC">© 2019 Michael Minardi</a>
+            </div>
+
+            <div class="col s5">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a class="apcFoot" href="#">about</a></li>
+                  <li><a class="apcFoot" href="#">portfolio</a></li>
+                  <li><a class="apcFoot" href="#">contact</a></li>
+                </ul>
+          </div>
+          </nav>
+      
+      </div>
+        <!-- </div> -->
+      </footer>
+    </div>
+     
+
+<script src="public/main.js"></script> <!--code in JS file-->
+
+  </body>
+</html>
+ 

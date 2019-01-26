@@ -223,10 +223,11 @@ line-height: 70px;
 
    /* For iphones */
 @media screen 
-and (min-width : 320px) and (max-width : 812px){
+and (min-width : 332px) and (max-width : 812px){
   .cardUno{
     font-size:32px;
     height: 400px;
+    width: 100%;
   }
 
   html,body
@@ -236,6 +237,12 @@ and (min-width : 320px) and (max-width : 812px){
     padding: 0px;
     overflow-x: hidden; 
 }
+
+.nameCC{
+  font-size: 5px;
+}
+
+
 
 }
 

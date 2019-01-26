@@ -229,6 +229,14 @@ and (min-width : 375px) and (max-width : 812px){
     height: 400px;
   }
 
+  html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 }
 
 

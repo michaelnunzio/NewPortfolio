@@ -223,7 +223,7 @@ line-height: 70px;
 
    /* For iphones */
 @media screen 
-and (min-width : 375px) and (max-width : 812px){
+and (min-width : 320px) and (max-width : 812px){
   .cardUno{
     font-size:32px;
     height: 400px;

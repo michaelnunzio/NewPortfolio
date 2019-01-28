@@ -224,7 +224,8 @@ line-height: 70px;
 
    /* For iphones */
 @media screen 
-and (min-width : 332px) and (max-width : 812px){
+and (min-width : 332px) and (max-width : 500px){
+  /*max was 812 try 500*/
   .cardUno{
     font-size:32px;
     height: 400px;
@@ -242,6 +243,16 @@ and (min-width : 332px) and (max-width : 812px){
 .nameCC{
   font-size: 5px;
 }
+
+.aboutTxt{
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+
 
 
 

@@ -240,6 +240,10 @@ and (min-width : 332px) and (max-width : 500px){
     overflow-x: hidden; 
 }
 
+.bottom{
+  text-align: center;
+}
+
 .nameCC{
   font-size: 5px;
 }

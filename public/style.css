@@ -523,6 +523,11 @@ text-align: center;
 
 }
 
+.gittt:hover {
+  opacity: 1;
+  transform: rotate(20deg);
+}
+
 .gittTxt{
   text-align: center;
   font-size: 20px;

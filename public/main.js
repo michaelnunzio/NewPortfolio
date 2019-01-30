@@ -9,6 +9,7 @@ $( document ).ready(function() {
     $("#test p").addClass("load");
     $("header").addClass("load");
     $(".cardUno").addClass("load");
+    $(".gittt").addClass("load");
 
     $('.sidenav').sidenav()
 

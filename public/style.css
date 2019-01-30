@@ -98,6 +98,9 @@ background-color: black;
   font-family: arial;
   /* font-family: 'Bangers', cursive; */
   /* font-family: 'Montserrat', cursive, bold; */
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif, cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
   font-weight: bolder;
   text-shadow: black 4px 4px;
   /*imagefade in*/
@@ -493,7 +496,7 @@ footer{
   font-family: "Montserrat", bold;
   font-size: 20px;
   font-weight: bolder;
-  margin-top:80px;
+  margin-top:60px;
   margin-bottom: 40px;
   /* margin-bottom: 100%; */
 
@@ -520,12 +523,26 @@ footer{
 .gittImg{
 margin-bottom: 50px;
 text-align: center;
+/* opacity: 0; */
+}
 
+.gittt{
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: opacity 1.5s ease-in;
+  -moz-transition: opacity 1.5s ease-in;
+  -o-transition: opacity 1.5s ease-in;
+  -ms-transition: opacity 1.5s ease-in;
+  transition: opacity 1.5s ease-in;
+}
+
+.gittt.load{
+  opacity:1;
 }
 
 .gittt:hover {
-  opacity: 1;
   transform: rotate(20deg);
+  /* opacity: 1; */
 }
 
 .gittTxt{

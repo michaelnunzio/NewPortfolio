@@ -10,7 +10,6 @@ $( document ).ready(function() {
     $("header").addClass("load");
     $(".cardUno").addClass("load");
     $(".gittt").addClass("load");
-
     $('.sidenav').sidenav()
 
 });

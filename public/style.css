@@ -1,4 +1,11 @@
 /* keep for now fixed white screen on side */
+
+.container-fluid{
+  height: 100%;
+
+}
+
+
 html,body
 {
     width: 100%;
@@ -262,7 +269,7 @@ and (min-width : 332px) and (max-width : 500px){
 }
 
 .background{
-font-size: 13px;
+font-size: 14px;
 }
 
 .aboutPic2{
@@ -548,4 +555,11 @@ text-align: center;
 .gittTxt{
   text-align: center;
   font-size: 20px;
+}
+
+/* contact page */
+
+.contactR{
+  margin-top:29px;
+  margin-bottom:30px;
 }

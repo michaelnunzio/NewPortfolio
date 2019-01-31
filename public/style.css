@@ -102,10 +102,10 @@ background-color: black;
   text-align: center;
   color: white;
   font-size: 60px;
-  font-family: arial;
+  /* font-family: arial; */
   /* font-family: 'Bangers', cursive; */
-  /* font-family: 'Montserrat', cursive, bold; */
-  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif, cursive;
+  font-family: 'Montserrat', cursive, bold;
+  /* font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif, cursive; */
   font-weight: bold;
   letter-spacing: 3px;
   font-weight: bolder;
@@ -562,4 +562,13 @@ text-align: center;
 .contactR{
   margin-top:29px;
   margin-bottom:30px;
+}
+
+.subbbed{
+  text-align: center;
+}
+
+.wow{
+color: rgb(85, 85, 85);
+font-family: 'Montserrat', cursive, bold;
 }

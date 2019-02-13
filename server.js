@@ -6,6 +6,15 @@ var logger = require("morgan");
 var app = express();
 var PORT = process.env.PORT || 3005
 
+var databaseUri= "mongodb://localhost/NewPort";
+
+if (process.env.MONGODB_URI){
+  mongoose.connect(process.env.MONGODB_URI);
+}else{
+  mongoose.connect(databaseUri)
+}
+
+
 //require model
 var Info = require("./Info.js");
 
@@ -24,7 +33,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/NewPort", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/NewPort", { useNewUrlParser: true });
 
 // Routes
 

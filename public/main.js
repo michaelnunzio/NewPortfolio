@@ -33,9 +33,6 @@ $( document ).ready(function() {
 });
 
 $(".contForm").click(function(e){
-   
-    
- 
 
     e.stopPropagation();
     
